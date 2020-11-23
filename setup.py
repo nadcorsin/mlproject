@@ -4,6 +4,7 @@ from setuptools import setup
 with open('requirements.txt') as f:
     content = f.readlines()
 requirements = [x.strip() for x in content if 'git+' not in x]
+install_requires=requirements,
 
 setup(name='mlproject',
       version="1.0",
